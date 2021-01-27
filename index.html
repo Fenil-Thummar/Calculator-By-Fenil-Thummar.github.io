@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator | By Fenil Thummar</title>
+    <link rel="icon" type="image/png" href="./dist/icon.png">
+    <link rel="stylesheet" href="dist/css/calculator.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="calculator">
+            <div class="calculator-header">
+                <span id="change" style="padding: 10px;">Change theme</span>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <div class="slider round"></div>
+                      </label>
+                </div>
+            </div>
+            <div class="calculator-body">
+                <div style="text-align: right">
+                    <h1 id="output">0</h1>
+                    <p id="input"></p>
+                </div>
+            </div>
+            <div class="calculator-footer">
+                <div class="symbol" onclick="calculate('C')"><span>⌫</span></div>
+                <div class="symbol" onclick="calculate('AC')"><span>AC</span></div>
+                <div class="symbol" onclick="calculate('%')"><span>%</span></div>
+                <div class="symbol" onclick="calculate('/')"><span>/</span></div>
+                <div onclick="calculate('7')"><span style="color:#c8c9d0;">7</span></div>
+                <div onclick="calculate('8')"><span style="color:#c8c9d0;">8</span></div>
+                <div onclick="calculate('9')"><span style="color:#c8c9d0;">9</span></div>
+                <div onclick="calculate('*')" class="symbol"><span>x</span></div>
+                <div onclick="calculate('4')"><span style="color:#c8c9d0;">4</span></div>
+                <div onclick="calculate('5')"><span style="color:#c8c9d0;">5</span></div>
+                <div onclick="calculate('6')"><span style="color:#c8c9d0;">6</span></div>
+                <div onclick="calculate('-')" class="symbol"><span>-</span></div>
+                <div onclick="calculate('1')"><span style="color:#c8c9d0;">1</span></div>
+                <div onclick="calculate('2')"><span style="color:#c8c9d0;">2</span></div>
+                <div onclick="calculate('3')"><span style="color:#c8c9d0;">3</span></div>
+                <div onclick="calculate('+')" class="symbol"><span>+</span></div>
+                <div onclick="calculate('0')"><span style="color:#c8c9d0;">0</span></div>
+                <div onclick="calculate('00')"><span style="color:#c8c9d0;">00</span></div>
+                <div onclick="calculate('.')"><span style="color:#c8c9d0;">.</span></div>
+                <div onclick="calculate('=')" class="symbol-dark"><span>=</span></div>
+            </div>
+        </div>
+        <div class="footer">
+            Fenil Thummar
+        </div>
+    </div>
+
+
+    <!-- Math.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.2.1/math.js"></script>
+
+    <!-- calculator.js -->
+    <script src="dist/js/calculator.js"></script>
+</body>
+
+</html>
